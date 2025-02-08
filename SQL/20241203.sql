@@ -483,7 +483,7 @@ FROM
 WHERE
     "CREDIT_PURCHASE".purchase_at >= '2024-11-01 00:00:00'
     AND
-    "CREDIT_PURCHASE".purchase_at =< '2024-11-30 23:59:59'
+    "CREDIT_PURCHASE".purchase_at <= '2024-11-30 23:59:59'
 GROUP BY
     "CREDIT_PACKAGE".name;
 
